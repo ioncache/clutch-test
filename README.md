@@ -1,5 +1,12 @@
 # clutch-test
 
+To run the app:
+```
+npm install
+npm run start
+served up on localhost:9000
+```
+
 Things I did:
 - made a server that serves up the json and the first page
 - created first page that shows the cars similar to the styling in the pdf
