@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <title>A Web Page</title>
+
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="author" content="Mark Jubenville <ioncache@gmail.com>">
+    <meta name="description" content="Test webpage for clutch.ca">
+    <meta name="viewport" content="width = device-width, user-scalable = yes, initial-scale = 1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+
+  <body>
+    <header></header>
+
+    <section class="main-container">
+      <nav>
+        <input id="price" name="price" type="number" min="0" step="1" value="" placeholder="Price" />
+
+        <div class="make-label">Make</div>
+        <div class="make-filters">
+          <button class="make-button" name="filter-honda" value="Honda">Honda</button>
+          <button class="make-button" name="filter-jeep" value="Jeep">Jeep</button>
+          <button class="make-button selected" name="filter-all" value="All">All</button>
+        </div>
+
+      </nav>
+
+      <section class="cars">
+        <div class="car-items"></div>
+      </section>
+    </section>
+
+    <footer>
+      Drive On
+    </footer>
+  </body>
+
+  <script src="/scripts/index.js"></script>
+</html>

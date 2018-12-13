@@ -1,0 +1,19 @@
+{
+  "name": "clutch-test",
+  "version": "0.0.1",
+  "description": "Test problem set",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "node app/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark Jubenville <ioncache@gmail.com>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "html": "^1.0.0",
+    "polymer-cli": "^1.1.0"
+  }
+}

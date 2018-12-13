@@ -1,0 +1,128 @@
+body {
+  display: grid;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  grid-template-columns: 100%;
+  grid-template-rows: 300px 1fr auto;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* width: 100vw; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+footer,
+header {
+  display: block;
+}
+
+footer {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 50px;
+  text-align: center;
+}
+
+header {
+  background: url('/images/header.png') no-repeat top center;
+}
+
+nav {
+  padding: 50px 20px 0;
+}
+
+/* reset button styles -- normally I'd put this in a separate file but for now leaving it here for clarity */
+
+nav button {
+    background: transparent;
+    border: none;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    width: auto;
+
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: inherit;
+}
+
+&::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+nav .make-button,
+nav .make-label,
+nav #price {
+  background-color: white;
+  border: 2px solid black;
+  display: block;
+  padding: 10px;
+  width: 100%;
+}
+
+nav .make-button,
+nav .make-label {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+nav .make-button {
+  cursor: pointer;
+}
+
+nav .make-button:hover,
+nav .make-button.selected {
+  background-color: lightgrey;
+}
+
+nav #price {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 1fr;
+}
+
+.cars {
+  margin-top: -100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: calc(100% + 100px);
+}
+
+.car-items {
+  display: grid;
+  grid-gap: 50px 25px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 200px) );
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.car {
+  background-color: white;
+  border: 2px solid black;
+  height: 150px;
+  width: 200px;
+}
+
+.car-pic {
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 85px;
+  width: 100%;
+}
+
+.car-details {
+  padding: 10px;
+  font-size: 10px;
+}
